@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div>
-      <Button title='Click Me' handleClick={(e, i) => console.log(state)} />
+      <Button title='Click Me' handleClick={(e) => console.log(state)} />
       <Input name='test' type='text' value={state} handleChange={(e) => setState(e.target.value)} />
     </div>
   );
