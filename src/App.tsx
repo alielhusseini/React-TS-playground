@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Input, Button } from './components/shared'
+import { Input, Button, Paragraph } from './components/shared'
 
 function App() {
 
@@ -9,6 +9,7 @@ function App() {
     <div>
       <Button title='Click Me' handleClick={(e) => console.log(state)} />
       <Input name='test' type='text' value={state} handleChange={(e) => setState(e.target.value)} />
+      <Paragraph styles={{ color: '#999' }} />
     </div>
   );
 }
