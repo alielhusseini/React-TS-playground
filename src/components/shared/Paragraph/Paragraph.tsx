@@ -1,6 +1,7 @@
+import { FC } from "react"
 import { IStylesProp } from "./Paragraph.types"
 
-export function Paragraph({ styles }: IStylesProp): JSX.Element {
+export const Paragraph: FC<IStylesProp> = ({ styles }) => {
     return (
         <div style={styles}>Paragraph Text</div>
     )
