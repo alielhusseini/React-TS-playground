@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from 'react';
 import { Input, Button, Paragraph } from './components/elements'
-import { TimerInterval, ListGeneric } from './components/shared'
+import { TimerInterval, ListGeneric, RandomNumber } from './components/shared'
 import { Counter } from './components/class'
 import { PrivateRoute } from './components/containers'
 import { Profile } from './components/pages'
@@ -43,6 +43,9 @@ function App() {
         items={[{ id: 1, name: 'Ali', color: 'blue' }, { id: 2, name: 'El', color: 'grey' }, { id: 2, name: 'Husseini', color: 'black' }]}
         handleClick={(item) => console.log({ item })}
       />
+      <br />
+      <br />
+      <RandomNumber value={10} isPositive />
     </div>
   );
 }
