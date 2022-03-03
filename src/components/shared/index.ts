@@ -1,3 +1,3 @@
-import { TimerInterval } from "./TimerInterval";
+import { TimerInterval } from "./TimeInterval/TimerInterval";
 
 export { TimerInterval }

@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import { Button } from '../common'
+import { Button } from '../../common'
 
 export function TimerInterval(): JSX.Element {
 
@@ -13,7 +13,6 @@ export function TimerInterval(): JSX.Element {
     }, 1000)
 
     const handleClick = () => {
-
         setToggelTimer((prevState) => !prevState)
         toggleTimer ? stopTimer() : intervalRef.current = startTimer()
     }

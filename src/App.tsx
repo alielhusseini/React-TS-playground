@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from 'react';
 import { Input, Button, Paragraph } from './components/common'
 import { TimerInterval } from './components/shared'
+import { Counter } from './components/class'
 
 function App() {
 
@@ -28,6 +29,9 @@ function App() {
       <br />
       <br />
       <TimerInterval />
+      <br />
+      <br />
+      <Counter message='Count:' />
     </div>
   );
 }
