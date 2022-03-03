@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from 'react';
-import { Input, Button, Paragraph } from './components/elements'
+import { Input, Button, Paragraph, Button2 } from './components/elements'
 import { TimerInterval, ListGeneric, RandomNumber, ToastNotification } from './components/shared'
 import { Counter } from './components/class'
 import { PrivateRoute } from './components/containers'
@@ -19,6 +19,9 @@ function App() {
   return (
     <div>
       <Button title='Click Me' handleClick={(e) => console.log(state)} />
+      <br />
+      <br />
+      <Button2 variant='primary' onClick={(e) => console.log(state)}>Click Me 2</Button2>
       <br />
       <br />
       <Input name='test' type='text' value={state} handleChange={(e) => setState(e.target.value)} ref={customInputRef} />
