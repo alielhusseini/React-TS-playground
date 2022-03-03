@@ -1,11 +1,12 @@
-import React, { useRef, useState, useEffect } from 'react';
-import { Input, Button, Paragraph } from './components/shared'
+import { useRef, useState, useEffect } from 'react';
+import { Input, Button, Paragraph } from './components/common'
+import { TimerInterval } from './components/shared'
 
 function App() {
 
   const [state, setState] = useState<string>('')
-  const customInputRef = useRef<HTMLInputElement>(null!)
-  const inputRef = useRef<HTMLInputElement>(null!)
+  const customInputRef = useRef<HTMLInputElement>(null!) // dom ref
+  const inputRef = useRef<HTMLInputElement>(null!) // dom ref
 
   useEffect(() => {
     customInputRef.current.focus()
@@ -26,6 +27,7 @@ function App() {
       <Paragraph styles={{ color: '#999' }} />
       <br />
       <br />
+      <TimerInterval />
     </div>
   );
 }

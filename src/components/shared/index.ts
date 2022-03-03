@@ -1,5 +1,3 @@
-import { Input } from "./Input/Input";
-import { Button } from "./Button/Button";
-import { Paragraph } from "./Paragraph/Paragraph";
+import { TimerInterval } from "./TimerInterval";
 
-export { Button, Input, Paragraph }
+export { TimerInterval }
