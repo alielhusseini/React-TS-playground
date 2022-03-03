@@ -2,6 +2,8 @@ import { useRef, useState, useEffect } from 'react';
 import { Input, Button, Paragraph } from './components/common'
 import { TimerInterval } from './components/shared'
 import { Counter } from './components/class'
+import { PrivateRoute } from './components/containers'
+import { Profile } from './components/pages'
 
 function App() {
 
@@ -32,6 +34,9 @@ function App() {
       <br />
       <br />
       <Counter message='Count:' />
+      <br />
+      <br />
+      <PrivateRoute isAuth={false} component={Profile} />
     </div>
   );
 }
