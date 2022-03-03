@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from 'react';
 import { Input, Button, Paragraph } from './components/elements'
-import { TimerInterval, ListGeneric, RandomNumber } from './components/shared'
+import { TimerInterval, ListGeneric, RandomNumber, ToastNotification } from './components/shared'
 import { Counter } from './components/class'
 import { PrivateRoute } from './components/containers'
 import { Profile } from './components/pages'
@@ -46,6 +46,9 @@ function App() {
       <br />
       <br />
       <RandomNumber value={10} isPositive />
+      <br />
+      <br />
+      <ToastNotification position='center' />
     </div>
   );
 }
