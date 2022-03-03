@@ -40,7 +40,7 @@ function App() {
       <br />
       <br />
       <ListGeneric
-        items={[1, 2, 3]}
+        items={[{ id: 1, name: 'Ali', color: 'blue' }, { id: 2, name: 'El', color: 'grey' }, { id: 2, name: 'Husseini', color: 'black' }]}
         handleClick={(item) => console.log({ item })}
       />
     </div>
