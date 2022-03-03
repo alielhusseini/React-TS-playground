@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import { Button } from '../../common'
+import { Button } from '../../elements'
 
 export function TimerInterval(): JSX.Element {
 

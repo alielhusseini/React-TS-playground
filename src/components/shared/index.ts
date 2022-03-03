@@ -1,3 +1,4 @@
-import { TimerInterval } from "./TimeInterval/TimerInterval";
+import { TimerInterval } from "./TimerInterval/TimerInterval";
+import { ListGeneric } from "./ListGeneric/ListGeneric";
 
-export { TimerInterval }
+export { TimerInterval, ListGeneric }

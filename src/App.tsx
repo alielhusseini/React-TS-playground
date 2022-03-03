@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from 'react';
-import { Input, Button, Paragraph } from './components/common'
-import { TimerInterval } from './components/shared'
+import { Input, Button, Paragraph } from './components/elements'
+import { TimerInterval, ListGeneric } from './components/shared'
 import { Counter } from './components/class'
 import { PrivateRoute } from './components/containers'
 import { Profile } from './components/pages'
@@ -27,7 +27,7 @@ function App() {
       <input type='text' ref={inputRef} />
       <br />
       <br />
-      <Paragraph styles={{ color: '#999' }} />
+      <Paragraph text='TEXT' styles={{ color: '#999' }} />
       <br />
       <br />
       <TimerInterval />
@@ -37,6 +37,12 @@ function App() {
       <br />
       <br />
       <PrivateRoute isAuth={false} component={Profile} />
+      <br />
+      <br />
+      <ListGeneric
+        items={[1, 2, 3]}
+        handleClick={(item) => console.log({ item })}
+      />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { Button } from "../../common";
+import { Button } from "../../elements";
 import { ICounterState, ICounterProp } from "./Counter.types";
 
 export class Counter extends Component<ICounterProp, ICounterState> { // if no props ==> empty object | if no state ==> just insert the proptype
